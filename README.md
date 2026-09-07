@@ -16,7 +16,8 @@ index.html          the whole page
 *.woff2             Oswald 600/700, Open Sans 400/700 — latin subset only
                     Images and fonts sit at the repo root, not in assets/ or fonts/.
 robots.txt, sitemap.xml, site.webmanifest, favicon.ico, apple-touch-icon.png
-vercel.json         headers: 1-year immutable cache on /assets + /fonts, HSTS, nosniff
+vercel.json         headers: 1-year immutable on *.woff2, 30-day on images,
+                    always-revalidate on /, HSTS, nosniff
 ```
 
 ## Rules that must not be broken
