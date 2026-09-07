@@ -241,3 +241,5 @@ a:hover{color:var(--red-900)}
   border-top:3px solid var(--red-700);padding:10px 14px;
   display:grid;grid-template-columns:1fr 1fr;gap:10px;box-shadow:0 -6px 18px rgba(0,0,0,.35)}
 #sticky-cta .btn{padding:14px 10px;font-size:var(--text-base)}
+/* desktop already has both CTAs pinned in the header */
+@media (min-width:900px){#sticky-cta{display:none}}
