@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.steevesstumpservices.ca/</loc>
     <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.steevesstumpservices.ca/owner-with-grinder-920.jpg</image:loc>
+      <image:title>Logan Steeves, owner of Steeves Stump Services, with his stump grinder near Moncton NB</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.steevesstumpservices.ca/job-before-stump-760.jpg</image:loc>
+      <image:title>Tree stump beside a house in Moncton NB before stump grinding</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.steevesstumpservices.ca/job-after-frontyard-760.jpg</image:loc>
+      <image:title>Front yard in Moncton ground flat and raked clean after stump removal</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.steevesstumpservices.ca/grinder-roadside-760.jpg</image:loc>
+      <image:title>Tracked stump grinder on a stump removal job in Greater Moncton</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.steevesstumpservices.ca/grinding-backyard-840.jpg</image:loc>
+      <image:title>Steeves Stump Services grinding a backyard tree stump in Moncton New Brunswick</image:title>
+    </image:image>
   </url>
 </urlset>
