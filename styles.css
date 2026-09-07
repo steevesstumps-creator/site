@@ -138,6 +138,14 @@ a:hover{color:var(--red-900)}
 .portrait{position:relative;min-width:0;width:100%;max-width:460px;justify-self:center;
   aspect-ratio:4/5;border-radius:var(--radius-sm);overflow:hidden;border:3px solid var(--red-700)}
 .portrait img{width:100%;height:100%;object-fit:cover}
+/* Mobile: photo sits directly under the header, above the headline.
+   Crops to 3:2 so it reads as a banner and the h1 still clears the fold —
+   the full 4:5 portrait would eat the whole viewport on a phone.
+   755px is where .hero-in drops to one column (2 x 340 + 40 gap + padding). */
+@media (max-width:755px){
+  .portrait{order:-1;aspect-ratio:3/2;max-width:none}
+  .hero-in{gap:26px}
+}
 
 /* ── Trust bar ─────────────────────────────────────────────────── */
 .trust{background:var(--red-700);color:var(--white-000)}
