@@ -145,13 +145,7 @@ a:hover{color:var(--red-900)}
 .nav a{font-family:var(--font-display);text-transform:uppercase;font-size:14px;
   letter-spacing:var(--tracking-wide);color:var(--white-000);text-decoration:none;white-space:nowrap}
 .nav a:hover{color:var(--white-pure);text-decoration:underline}
-.hdr-cta{display:flex;align-items:center;gap:10px;flex:1 1 260px}
-#hdr-call{flex:1 1 auto;font-weight:600;font-size:16px;padding:12px 20px;white-space:nowrap}
-#hdr-text{flex:0 0 auto;font-weight:600;font-size:16px;background:transparent;color:var(--white-000);
-  border:2px solid var(--white-000);padding:10px 18px;white-space:nowrap}
-#hdr-text:hover{background:var(--white-000);color:var(--black-900);filter:none}
 @media (max-width:900px){.nav{display:none}}
-@media (max-width:560px){#hdr-text{display:none}#hdr-call{font-size:15px;padding:11px 14px}}
 
 /* ── Hero ──────────────────────────────────────────────────────── */
 .hero{position:relative;background:var(--black-900);color:var(--text-inverse);overflow:hidden}
@@ -285,8 +279,6 @@ a:hover{color:var(--red-900)}
   border-top:3px solid var(--red-700);padding:10px 14px;
   display:grid;grid-template-columns:1fr 1fr;gap:10px;box-shadow:0 -6px 18px rgba(0,0,0,.35)}
 #sticky-cta .btn{padding:14px 10px;font-size:var(--text-base)}
-/* desktop already has both CTAs pinned in the header */
-@media (min-width:900px){#sticky-cta{display:none}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"LocalBusiness","@id":"https://www.steevesstumpservices.ca/#business","name":"Steeves Stump Services LTD","alternateName":"Steeves Stump Services","description":"Stump grinding and stump removal company serving Moncton and surrounding areas in New Brunswick.","url":"https://www.steevesstumpservices.ca/","founder":{"@type":"Person","name":"Logan Steeves"},"telephone":"+1-506-866-1424","email":"steevesstumps@gmail.com","priceRange":"$$","image":["https://www.steevesstumpservices.ca/owner-with-grinder-920.jpg","https://www.steevesstumpservices.ca/job-before-stump-760.jpg","https://www.steevesstumpservices.ca/job-after-frontyard-760.jpg","https://www.steevesstumpservices.ca/grinder-roadside-760.jpg"],"logo":"https://www.steevesstumpservices.ca/logo-220.png","address":{"@type":"PostalAddress","streetAddress":"Coverdale Road","addressLocality":"Moncton","addressRegion":"NB","addressCountry":"CA"},"geo":{"@type":"GeoCoordinates","latitude":46.0878,"longitude":-64.7782},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}],"areaServed":[{"@type":"City","name":"Moncton"},{"@type":"City","name":"Riverview"},{"@type":"City","name":"Dieppe"},{"@type":"City","name":"Shediac"},{"@type":"City","name":"Salisbury"},{"@type":"City","name":"Petitcodiac"},{"@type":"City","name":"Hillsborough"},{"@type":"City","name":"Berry Mills"}],"sameAs":["https://www.facebook.com/people/Steeves-Stump-Services/61590808328225/","https://www.instagram.com/steevesstumpservices/"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Stump Services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Stump Grinding"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Stump Removal"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Root Grinding"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Yard Cleanup and Wood Chip Haul-Away"}}]}}
@@ -315,10 +307,6 @@ a:hover{color:var(--red-900)}
       <a href="#areas">Areas</a>
       <a href="#reviews">Reviews</a>
     </nav>
-    <div class="hdr-cta">
-      <a class="btn btn-red" id="hdr-call" href="sms:+15068661424?&body=Hi%2C%20here%20is%20a%20photo%20of%20my%20stump.%20My%20address%20is%3A%20">Text Us A Photo</a>
-      <a class="btn" id="hdr-text" href="tel:+15068661424">Call (506) 866-1424</a>
-    </div>
   </div>
 </header>
 
