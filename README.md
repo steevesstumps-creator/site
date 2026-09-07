@@ -10,9 +10,11 @@ output = repo root. `vercel.json` sets caching + security headers.
 ## Files
 ```
 index.html          the whole page
-styles.css          tokens + classes (self-hosted @font-face at the top)
-assets/             responsive WebP + JPEG at 1x/2x, pre-cropped to their display ratio
-fonts/              Oswald 600/700, Open Sans 400/700 — latin subset only
+                    CSS is inlined in <style> — one request, no render-blocking
+                    round trip. There is no styles.css; edit the <style> block.
+*.webp / *.jpg      responsive images at 1x/2x, pre-cropped to their display ratio
+*.woff2             Oswald 600/700, Open Sans 400/700 — latin subset only
+                    Images and fonts sit at the repo root, not in assets/ or fonts/.
 robots.txt, sitemap.xml, site.webmanifest, favicon.ico, apple-touch-icon.png
 vercel.json         headers: 1-year immutable cache on /assets + /fonts, HSTS, nosniff
 ```
