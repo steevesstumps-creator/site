@@ -173,8 +173,18 @@ a:hover{color:var(--red-900)}
    the full 4:5 portrait would eat the whole viewport on a phone.
    755px is where .hero-in drops to one column (2 x 340 + 40 gap + padding). */
 @media (max-width:755px){
-  .portrait{order:-1;aspect-ratio:3/2;max-width:none}
-  .hero-in{gap:26px}
+  /* Headline first, photo right under it, then the pitch.
+     display:contents lifts .hero-col's children into the .hero-in grid so
+     the photo can sit between them without moving anything in the markup. */
+  .hero-col{display:contents}
+  .hero-in{gap:20px}
+  .badge{order:1}
+  .hero h1{order:2}
+  .portrait{order:3;aspect-ratio:3/2;max-width:none}
+  .hero-lede{order:4}
+  .ticks{order:5}
+  .hero .btn-row{order:6}
+  .hero-note{order:7}
 }
 
 /* ── Trust bar ─────────────────────────────────────────────────── */
